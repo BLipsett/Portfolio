@@ -1,17 +1,22 @@
 body {
     background-image: url("https://images.unsplash.com/photo-1469735139965-2d27590468a4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80");
     color: black;
-    
-    
+    background-attachment: fixed;
 }
 
 #bio-image {
-    height: 200px;
-    width: 200px;
-    border-radius: 10px;    
-    
+    height: 255px;
+    width: 230px;
+    border-radius: 50%;
+    border: 2rem;
+    box-shadow: 0 12px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.container.landing{
+
+.container.whole {
+    justify-content: center;
+}
+
+.container.landing {
     text-align: center;
     padding: 5rem;
 }
@@ -20,7 +25,8 @@ body {
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
-    font-size: 24px;  /* Preferred icon size */
+    font-size: 24px;
+    /* Preferred icon size */
     display: inline-block;
     line-height: 1;
     text-transform: none;
@@ -29,39 +35,76 @@ body {
     white-space: nowrap;
     direction: ltr;
     color: black;
-  
     /* Support for all WebKit browsers. */
     -webkit-font-smoothing: antialiased;
     /* Support for Safari and Chrome. */
     text-rendering: optimizeLegibility;
-  
     /* Support for Firefox. */
     -moz-osx-font-smoothing: grayscale;
-  
     /* Support for IE. */
     font-feature-settings: 'liga';
-  }
+}
 
-  nav.bar {
-      background-color: transparent;
-      box-shadow: none;
-      color: black;
+nav.bar {
+    background-color: transparent;
+    box-shadow: none;
+    color: black;
+}
 
-  }
+#main-bio {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
-  @media only screen and (max-width: 600px) {
-    body {
-      background-size: 100%;
+#nav-mobile {
+    color: black;
+}
+
+.right a {
+    color: black;
+}
+
+.left a {
+    color: black;
+}
+
+.lower {
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 100px;
+    color: white;
+    justify-content: space-between;
+}
+
+.des {
+    font-family: 'Pacifico', cursive;
+    padding-right: 20px;
+}
+
+.dev {
+    font-family: 'EB Garamond', serif;
+    padding-left: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {}
+    .lower {
+        display: flex;
+        flex-flow: wrap;
+        font-size: 100px;
+        color: white;
+        justify-content: center;
     }
-  }
-  #nav-mobile {
-      color: black;
-  }
-
-  .right a {
-      color: black;
-  }
-  .left a {
-      color: black;
-  }
-  
+    .des {
+        padding: 0px;
+    }
+    #nav-mobile {
+        display: flex;
+        flex-flow: column;
+    }
+    .right {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+}
