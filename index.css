@@ -5,8 +5,8 @@ body {
 }
 
 #bio-image {
-    height: 255px;
-    width: 230px;
+    height: 210px;
+    width: 190px;
     border-radius: 50%;
     border: 2rem;
     box-shadow: 0 12px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -106,5 +106,8 @@ nav.bar {
     .right {
         display: flex;
         flex-flow: column-reverse;
+    }
+    #main-bio {
+        padding: 20px;
     }
 }
