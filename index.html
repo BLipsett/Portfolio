@@ -10,7 +10,7 @@
         @import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
     </style>
     <link rel="stylesheet" type="text/css" href="index.css">
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Pacifico&display=swap" rel="stylesheet">
@@ -20,23 +20,27 @@
     <div class="container">
         <nav class="bar">
             <div class="nav-wrapper" id="top">
-                <ul class="right">
-                    <li><a href="https://www.linkedin.com/in/brian-lipsett-b14b151a2/" class="fa fa-linkedin-square"
-                            style="font-size:36px"></a></li>
-                    <li><a href="contact.html" class="material-icons email">email</a></li>
-                </ul>
-                <ul id="nav-mobile" class="left sidenav-trigger">
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="left hide-on-med-and-down">
                     <li><a class="material-icons" href="index.html">home</a></li>
                     <li><a href="about.html">About Me</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="https://blipsett.github.io/Portfolio/Lipsett%20Resume.PDF" download>Resume</a></li>
 
                 </ul>
-            </div>
+                <ul class="right">
+                    <li><a href="https://www.linkedin.com/in/brian-lipsett-b14b151a2/" class="fa fa-linkedin-square"
+                            style="font-size:36px"></a></li>
+                    <li><a href="contact.html" class="material-icons email">email</a></li>
+                </ul>
         </nav>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="https://blipsett.github.io/Portfolio/Lipsett%20Resume.PDF" download>Resume</a></li>
+        </ul>
     </div>
-
-
     <div class="container landing">
 
         <section id="main-bio">
@@ -58,13 +62,22 @@
     </section>
 
     <div class="footer">
-        <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@jackrains?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Jack Rains"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Jack Rains</span></a>
-        
+        <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
+            href="https://unsplash.com/@jackrains?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+            target="_blank" rel="noopener noreferrer"
+            title="Download free do whatever you want high-resolution photos from Jack Rains"><span
+                style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg"
+                    style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
+                    viewBox="0 0 32 32">
+                    <title>unsplash-logo</title>
+                    <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
+                </svg></span><span style="display:inline-block;padding:2px 3px">Jack Rains</span></a>
+
     </div>
 
 
     </div>
-    
+
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="script.js"></script>

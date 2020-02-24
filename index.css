@@ -127,4 +127,7 @@ nav.bar {
         padding: 3rem;
 
     }
+    .card {
+        width: 100%;
+    }
 }
